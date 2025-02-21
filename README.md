@@ -1,0 +1,9 @@
+In this project, I focused on identifying and blocking malicious software used by a threat actor known as Sphinx. The main objective was not just to detect individual malware samples but to develop defense strategies that could withstand evasion techniques used by attackers.
+
+In the first stage, I discovered a unique way to identify a malicious file and created a rule to block it. However, the adversary quickly adapted by modifying the file structure, which required finding a new detection method. Analyzing network traffic helped identify suspicious connections, leading to the implementation of firewall filtering.
+
+In response to these security measures, Sphinx started using dynamically changing addresses, hiding its infrastructure behind domain names. Implementing DNS filtering helped counter this tactic. However, the attackers continued their evasion attempts by modifying malware behavior and tampering with security settings on compromised systems. To combat this, I introduced system monitoring for configuration changes and implemented signature-based detection rules.
+
+At the final stage, it became evident that the adversary had shifted to more sophisticated concealment methods, minimizing traces in the operating system and moving attack logic to remote servers. This required deep behavioral analysis—examining the regularity of network connections and analyzing executed commands on infected systems. As a result, I was able to identify characteristic activity patterns and create rules to detect them, ultimately blocking further attacks.
+
+The project demonstrated how continuously strengthening security measures forces attackers to adapt, increasing their costs and reducing the effectiveness of their attacks. In the end, Sphinx abandoned further attempts to bypass the defenses, confirming the success of the implemented countermeasures.
